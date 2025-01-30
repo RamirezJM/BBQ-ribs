@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.image-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  background-image: url('../images/dark-ribs.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2em;
+}
+
+.image-section p{
+  order: -1;
+  color: #F18119;
+  border-top: solid 3px transparent;
+  background-image: linear-gradient(to right, #FFA51D, #DF4E13);
+  background-clip: border-box;
+}
+
+.image-section h1{
+  font-size: 2.3rem;
+  color: #ffffff;
+  font-weight: 300;
+  padding-inline: 2em;
+}
+.image-section span{
+  font-weight: 700;
+}
+.image-section h2{
+  color: #F18119;
+}
+
+.form-section{
+  text-align: center;
+  margin-block: 3em;
+}
+.form-section h3{
+  text-transform: uppercase;
+  color: #F18119;
+}
+.form-section p{
+  padding-inline: 1em;
+  color: #5A5A5A;
+}
+.form-section form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1em;
+  
+}
+
+.form-section input{
+  border-radius: 5px;
+  text-align: center;
+  width: 60%;
+  padding: .8em 0;
+  
+}
+ .form-section input:last-child{
+  background-image: linear-gradient(to right, #FFA51D, #DF4E13);
+  color: #ffffff;
+  text-transform: uppercase;
+ }
+ .form-section p:last-of-type{
+  font-size: .7rem;
+  color: #5A5A5A;
+ }
