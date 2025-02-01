@@ -11,7 +11,6 @@
 .image-section{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   gap: 3rem;
   background-image: url('../images/dark-ribs.jpg');
@@ -49,6 +48,7 @@
 .form-section h3{
   text-transform: uppercase;
   color: #F18119;
+  margin-bottom: 1em;
 }
 .form-section p{
   padding-inline: 1em;
@@ -78,4 +78,32 @@
  .form-section p:last-of-type{
   font-size: .7rem;
   color: #5A5A5A;
+ }
+
+ @media screen and (min-width: 768px){
+
+  .main-container{
+    display: flex;
+   min-height: 100vh;
+      
+  }
+  .image-section{
+    flex: 2;
+    justify-content: space-between; 
+  }
+  .image-section h1{
+    
+    font-size: 3.5rem;
+  }
+  .image-section h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    
+  }
+ 
+  .form-section{
+    flex: 2;
+   
+  }
+  
  }
