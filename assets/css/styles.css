@@ -23,9 +23,10 @@
 .image-section p{
   order: -1;
   color: #F18119;
-  border-top: solid 3px transparent;
-  background-image: linear-gradient(to right, #FFA51D, #DF4E13);
-  background-clip: border-box;
+  border-top: solid 5px transparent;
+  border-image: linear-gradient(to right, #FFA51D, #DF4E13) 1;
+  /*el 1 corresponde a border-image-slice*/
+  padding-block: .5em;
 }
 
 .image-section h1{
@@ -70,6 +71,17 @@
   padding: .8em 0;
   
 }
+ .form-section input:hover{
+  transform: scale(1.1);
+  border: 2px solid aqua;
+
+ }
+ .form-section input:focus {
+  outline: none; /* Eliminamos el borde predeterminado del navegador */
+  transform: scale(1.1);
+  border: 2px solid aqua;
+}
+
  .form-section input:last-child{
   background-image: linear-gradient(to right, #FFA51D, #DF4E13);
   color: #ffffff;
